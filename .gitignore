@@ -1,5 +1,6 @@
 # dependencies
 /node_modules
+package-lock.json
 /.pnp
 .pnp.js
 .yarn/install-state.gz
@@ -46,3 +47,5 @@ captcha.png
 cropped.png
 chromedriver.exe
 .Rproj.user
+
+training.egg-info

@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 import time
 import easyocr
 from PIL import Image
-from price_predictor import BookDataset, Model
+from utils import BookDataset, Model
 import pandas as pd
 import torch
 from tqdm.auto import tqdm
@@ -125,7 +125,7 @@ def get_listings(isbn_13):
     return prices_list, conditions_list
 
 isbnFile = open('isbns.txt', 'r')
-outputFile = open('out.txt', 'w')
+outputFile = open('filteredIsbns.txt', 'w')
 isbns = [int(line) for line in isbnFile.readlines()]
 
 def calc_price(prices_list, conditions_list):
